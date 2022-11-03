@@ -1,0 +1,73 @@
+@import url('./fonts/AnonymousPro-Regular.ttf');
+
+* {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background-color: rgb(215, 225, 246);
+}
+
+a {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+ul li:before {
+    content: '';
+    width: 35px;
+    height: 35px;
+    background-image: url("image/Pluto-PNG-Planet-3249248257");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+button {
+    width: 50%;
+    height: 30%;
+    position: relative;
+    overflow: hidden;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button::before {
+    width: 200%;
+    height: 1800%;
+    content: '';
+    background: linear-gradient(135deg, #21d4fd 25%, #b721ff 75%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    transform: translate(-25%, -25%);
+    z-index: -1;
+}
+
+button:hover::before {
+    transform: translate(-25%, -25%) rotate(180deg);
+}

@@ -1,0 +1,26 @@
+@import url('../fonts/AnonymousPro-Regular.ttf');
+
+body {
+    background-color: rgb(215, 225, 246);
+}
+
+div {
+    border-radius: 10px;
+    border-style: dashed solid;
+    width: 280px;
+    background-color: azure;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    margin: 20px;
+}
+
+a:visited {
+    color: rgb(82, 60, 147);
+}
+

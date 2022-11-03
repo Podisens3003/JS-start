@@ -1,0 +1,40 @@
+@import url('../fonts/AnonymousPro-Regular.ttf');
+
+* {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 600;
+}
+
+body {
+    background-color: rgb(215, 225, 246);
+    font-size: 20px;
+    color: black;
+    margin: 20px;
+}
+
+.text-field_input {
+    display: block;
+    font-size: 15px;
+    line-height: 1.5rem;
+    margin: 20px 0px;
+    padding: 5px;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: all 0.35s ease-in-out;
+    outline: none;
+}
+
+.text-field_input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+button {
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+    transition: all 0.35s ease-in-out;
+}
+
+button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
